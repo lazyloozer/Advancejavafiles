@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <bean id="E1" class="com.kodnest.bean.Employee">
+  <property  name="technologies">
+  <list>
+  <value>Spring</value>
+  <value>Java</value>
+  <value>Python</value>
+  </list>
+  </property>
+  <property name="projects">
+  <set>
+  <value>P1</value>
+  <value>P2</value>
+  <value>P3</value>
+  </set>
+  </property>
+  <property name="organisations">
+  <map>
+  <entry key="01" value="Wipro"></entry>
+  <entry key="02" value="TCS"></entry>
+  <entry key="03" value="GOOGLE"></entry>
+  </map>
+  </property>
+  </bean>
+  </beans>
